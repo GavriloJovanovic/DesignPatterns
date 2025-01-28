@@ -1,2 +1,2 @@
 # DesignPatterns
-Java and DP
+Project where we will implement all design patterns in Java
