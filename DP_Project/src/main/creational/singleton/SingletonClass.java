@@ -1,4 +1,4 @@
-package main.creational;
+package main.creational.singleton;
 
 public class SingletonClass {
     private static SingletonClass instace;
@@ -15,7 +15,11 @@ public class SingletonClass {
 
     public static SingletonClass getInstace(String value) {
         if(instace == null) {
-            instace = new SingletonClass(value);
+            synchronized (SingletonClass.class) {
+                if(instace == null) {
+                    instace = new SingletonClass(value);
+                }
+            }
         }
         return instace;
     }

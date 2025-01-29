@@ -1,10 +1,8 @@
-package test.creational;
+package test.creational.singleton;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import main.creational.SingletonClass;
+import main.creational.singleton.SingletonClass;
 import org.junit.jupiter.api.Test;
 
 public class SingletonClassTest {
